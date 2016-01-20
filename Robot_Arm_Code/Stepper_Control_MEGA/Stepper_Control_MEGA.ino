@@ -90,18 +90,18 @@ void loop()
       digitalWrite(enablePinBase, LOW);
       digitalWrite(directionPinBase, HIGH); //Decide Direction
       digitalWrite(stepPinBase, HIGH);
-      delay(1); //Speed of Motor (1 step per x milliseconds)
+      delay(10); //Speed of Motor (1 step per x milliseconds)
       digitalWrite(stepPinBase, LOW);
-      delay(1);
+      delay(10);
     }
 
     if (buttonStateBaseLeft == HIGH) {  //SWITCH IF WRONG DIRECTION
       digitalWrite(enablePinBase, LOW);
       digitalWrite(directionPinBase, LOW); //Decide Direction
       digitalWrite(stepPinBase, HIGH);
-      delay(1); //Speed of Motor (1 step per x milliseconds)
+      delay(10); //Speed of Motor (1 step per x milliseconds)
       digitalWrite(stepPinBase, LOW);
-      delay(1);
+      delay(10);
     }
   }  //End Base Motor Control
 
@@ -112,18 +112,18 @@ void loop()
       digitalWrite(enablePinElbow, LOW);
       digitalWrite(directionPinElbow, HIGH); //Decide Direction
       digitalWrite(stepPinElbow, HIGH);
-      delay(1); //Speed of Motor (1 step per x milliseconds)
+      delay(10); //Speed of Motor (1 step per x milliseconds)
       digitalWrite(stepPinElbow, LOW);
-      delay(1);
+      delay(10);
     }
 
     if (buttonStateElbowDown == HIGH) {  //SWITCH IF WRONG DIRECTION
       digitalWrite(enablePinElbow, LOW);
       digitalWrite(directionPinElbow, LOW); //Decide Direction
       digitalWrite(stepPinElbow, HIGH);
-      delay(1); //Speed of Motor (1 step per x milliseconds)
+      delay(10); //Speed of Motor (1 step per x milliseconds)
       digitalWrite(stepPinElbow, LOW);
-      delay(1);
+      delay(10);
     }
   } //Start Elbow Motor Control
 
@@ -134,18 +134,18 @@ void loop()
       digitalWrite(enablePinArm, LOW);
       digitalWrite(directionPinArm, HIGH); //Decide Direction
       digitalWrite(stepPinArm, HIGH);
-      delay(1); //Speed of Motor (1 step per x milliseconds)
+      delay(20); //Speed of Motor (1 step per x milliseconds)
       digitalWrite(stepPinArm, LOW);
-      delay(1);
+      delay(20);
     }
 
     if (buttonStateArmDown == HIGH) {  //SWITCH IF WRONG DIRECTION
       digitalWrite(enablePinArm, LOW);
       digitalWrite(directionPinArm, LOW); //Decide Direction
       digitalWrite(stepPinArm, HIGH);
-      delay(1); //Speed of Motor (1 step per x milliseconds)
+      delay(20); //Speed of Motor (1 step per x milliseconds)
       digitalWrite(stepPinArm, LOW);
-      delay(1);
+      delay(20);
     }
   }  //End Arm Motor Control
 }
